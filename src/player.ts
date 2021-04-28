@@ -8,7 +8,7 @@ import { removeExtension, truncateName } from "./trackutils";
 import { ReactMessage } from "./interfaces";
 import { handleCommand } from "./commands";
 import { MAX_SECONDS } from "./download";
-import { existsSync } from "node:fs";
+import { existsSync } from "fs";
 
 let tracks = getAllTracksAsync().sort(() => Math.random() > 0.5 ? 1 : -1);
 let indexPlaying = 0;
